@@ -1,5 +1,9 @@
-RPM Spec
+DebSyntax
 ========
-RPM Spec files syntax definition for Sublime Text 2.
 
-Based on **[RPM spec file syntax highlighting for nano](http://savannah.gnu.org/patch/?7515)**
+WORK IN PROGRESS.
+
+Syntax definition for Debian files.
+
+Heavily based on [RPMSpec by dreadatour](https://github.com/dreadatour/RPMSpec), which in turn is based on the [nano syntax](http://savannah.gnu.org/patch/?7515).
+
