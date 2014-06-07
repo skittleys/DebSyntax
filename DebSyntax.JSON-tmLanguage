@@ -1,7 +1,7 @@
 {
-	"name": "RPM Spec",
-	"scopeName": "source.spec",
-	"fileTypes": ["spec"],
+	"name": "DebSyntax",
+	"scopeName": "text.debsyntax",
+	"fileTypes": ["dsc"],
 	"patterns": [
 		{
 			"match": "(Icon|ExclusiveOs|ExcludeOs):",
