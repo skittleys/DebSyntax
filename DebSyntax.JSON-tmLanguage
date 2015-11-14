@@ -5,72 +5,72 @@
 	"patterns": [
 		{
 			"match": "(Icon|ExclusiveOs|ExcludeOs):",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
 			"match": "(BuildArch|BuildArchitectures|ExclusiveArch|ExcludeArch):",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
 			"match": "(Conflicts|Obsoletes|Provides|Requires|Requires\\(.*\\)|Enhances|Suggests|BuildConflicts|BuildRequires|Recommends|PreReq|Supplements):",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
 			"match": "(Epoch|Serial|Nosource|Nopatch):",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
 			"match": "(AutoReq|AutoProv|AutoReqProv):",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
 			"match": "(Copyright|License|Summary|Summary\\(.*\\)|Distribution|Vendor|Packager|Group|Source\\d*|Patch\\d*|BuildRoot|Prefix):",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
 			"match": "(Name|Version|Release|Url|URL):",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
-			"name": "keyword.spec",
+			"name": "keyword.debsyntax",
 			"begin": "^(Source|Patch)",
 			"end": ":"
 		}, {
 			"match": "(ifarch|ifnarch|ifos|ifnos)",
-			"name": "keyword.control.spec"
+			"name": "keyword.control.debsyntax"
 		}, {
-			"name": "variable.spec",
+			"name": "variable.debsyntax",
 			"begin": "%\\{",
 			"patterns": [
 				{
 					"match": "__[A-Z_a-z_0-9_]*",
-					"name": "variable.spec"
+					"name": "variable.debsyntax"
 				}, {
 					"match": "[A-Z_a-z_0-9_]*",
-					"name": "variable.spec"
+					"name": "variable.debsyntax"
 				}
 			],
 			"end": "\\}"
 		}, {
 			"match": "%__([A-Z_a-z_0-9_]*)",
-			"name": "variable.spec"
+			"name": "variable.debsyntax"
 		}, {
 			"match": "%_([A-Z_a-z_0-9_]*)",
-			"name": "variable.spec"
+			"name": "variable.debsyntax"
 		}, {
 			"match": "%([A-Z_a-z_0-9_]+)",
-			"name": "variable.spec"
+			"name": "variable.debsyntax"
 		}, {
 			"match": "^%(build$|changelog|check$|clean$|description|files|install$|package|prep$|pre|preun|post|postun|trigger|triggerin|triggerpostun|triggerun|verifyscript)",
-			"name": "keyword.control.spec"
+			"name": "keyword.control.debsyntax"
 		}, {
 			"match": "%(if|else|endif|define|global|undefine)",
-			"name": "keyword.control.spec"
+			"name": "keyword.control.debsyntax"
 		}, {
 			"match": "^\\s*#.*$",
-			"name": "comment.line.spec"
+			"name": "comment.line.debsyntax"
 		}, {
 			"match": "^# norootforbuild",
-			"name": "keyword.spec"
+			"name": "keyword.debsyntax"
 		}, {
 			"match": "^\\* .*\\)$",
-			"name": "meta.documentation.spec"
+			"name": "meta.documentation.debsyntax"
 		}, {
 			"include": "source.shell"
 		}
 	],
-	"uuid": "49e56b70-cf79-11e1-9b23-0800200c9a66"
+	"uuid": "6df4e41e-2988-41ac-bdcd-a4b1347b42e9"
 }
